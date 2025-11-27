@@ -322,18 +322,6 @@ export default function Home() {
               Add Your Site
             </Button>
             
-            <Button
-              variant="outline"
-              onClick={() => document.getElementById("favorites")?.scrollIntoView({ behavior: "smooth" })}
-              className="rounded-lg text-lg px-3 py-1.5 transition-colors bg-transparent hover:!bg-[#EF93B8]"
-              style={{ 
-                borderColor: '#000000', 
-                color: '#000000',
-                borderWidth: '1px'
-              }}
-            >
-              Favorite sites
-            </Button>
             
           </div>
         </div>
