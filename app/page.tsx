@@ -349,7 +349,7 @@ export default function Home() {
           />
           <div className="flex-1 text-center -space-x-10 space-y-6 -mt-2">
             <h1 className="text-3xl md:text-3xl font-bold" style={{ color: '#D04D77', fontFamily: 'var(--font-press-start), monospace', letterSpacing: '0.1em', wordSpacing: '0.2em', lineHeight: '1.5' }}>
-              A Tiny Corner of the Internet That Goes "Hmm."
+              A Tiny Corner of the Internet That Goes &quot;Hmm.&quot;
             </h1>
             <p className="text-base md:text-lg" style={{ color: '#D04D77', fontFamily: 'var(--font-poppins), sans-serif' }}>
               A curated collection of delightful, odd, nostalgic, and playful corners of the internet.
@@ -532,7 +532,7 @@ export default function Home() {
             <div className="space-y-3">
               <h2 className="text-5xl font-bold" style={{ color: '#000000' }}>Time Travel Mode</h2>
               <p className="text-xl italic" style={{ color: '#000000' }}>
-                Pick a year. We'll take you to the internet that existed back then.
+                Pick a year. We&apos;ll take you to the internet that existed back then.
               </p>
             </div>
 
@@ -597,7 +597,7 @@ export default function Home() {
           <div className="w-full md:w-1/3 flex-shrink-0 pt-60 ml-20 space-y-4">
             <h2 className="text-4xl font-semibold" style={{ color: '#000000' }}>Submit a Website</h2>
             <p className="text-3xl italic leading-relaxed" style={{ color: '#000000' }}>
-              Found something weird, delightful, or just very internet? Share it with us — we'd love to add it.
+              Found something weird, delightful, or just very internet? Share it with us — we&apos;d love to add it.
             </p>
           </div>
 
