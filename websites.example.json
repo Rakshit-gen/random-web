@@ -1,0 +1,42 @@
+[
+  {
+    "url": "https://www.cameronsworld.net",
+    "title": "Cameron's World",
+    "category": "Art",
+    "genres": ["Archive", "Nostalgia", "GIF Art"],
+    "year": 2015,
+    "description": "A love letter to the Internet of old. An interactive collage of GeoCities websites from the 1990s, celebrating the creativity and chaos of the early web."
+  },
+  {
+    "url": "https://neal.fun/absurd-trolley-problems",
+    "title": "Absurd Trolley Problems",
+    "category": "Game",
+    "genres": ["Interactive", "Philosophy", "Humor"],
+    "year": 2021,
+    "description": "A game that puts you in increasingly absurd variations of the classic trolley problem. Make impossible choices and see what others decided."
+  },
+  {
+    "url": "https://pointerpointer.com",
+    "title": "Pointer Pointer",
+    "category": "Interactive",
+    "genres": ["Fun", "Photography", "Clever"],
+    "year": 2012,
+    "description": "Move your mouse anywhere on the screen and watch as a photo of someone pointing at your cursor appears. Surprisingly satisfying and endlessly entertaining."
+  },
+  {
+    "url": "https://www.koalastothemax.com",
+    "title": "Koalas to the Max",
+    "category": "Interactive",
+    "genres": ["Art", "Relaxing", "Discovery"],
+    "year": 2011,
+    "description": "Start with a single circle and interact with it to reveal a hidden image through an endless cascade of smaller circles. Meditative and delightful."
+  },
+  {
+    "url": "https://theuselessweb.com",
+    "title": "The Useless Web",
+    "category": "Discovery",
+    "genres": ["Random", "Fun", "Curator"],
+    "year": 2012,
+    "description": "Click the button to be taken to a random useless but entertaining website. Perfect for procrastination and discovering weird corners of the internet."
+  }
+]

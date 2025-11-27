@@ -150,7 +150,7 @@ MONGODB_URI=mongodb://localhost:27017/the-random-web
 
 For MongoDB Atlas:
 ```
-MONGODB_URI=mongodb+srv://username:password@cluster.mongodb.net/the-random-web?retryWrites=true&w=majority
+MONGODB_URI=
 ```
 
 ### Running the Development Server
