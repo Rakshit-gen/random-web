@@ -337,7 +337,7 @@ export default function Home() {
             {/* Logo centered on camera */}
             <div className="absolute inset-0 flex items-center justify-center">
               <div 
-                className="p-2 bg-gray-400 mr-5 mt-6 rounded object-contain"
+                className="p-2 mr-5 mt-6 rounded object-contain"
                 style={{
                   transform: 'rotate(-38deg)',
                   transformOrigin: 'center'
