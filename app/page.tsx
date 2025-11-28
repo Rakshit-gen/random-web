@@ -283,7 +283,7 @@ export default function Home() {
 
           {/* Navigation Buttons */}
           <div className="flex items-center justify-center gap-6 flex-wrap flex-1">
-            <Button
+            <Button 
               variant="outline"
               onClick={() => document.getElementById("category")?.scrollIntoView({ behavior: "smooth" })}
               className="rounded-lg text-lg px-3 py-1.5 transition-colors bg-transparent hover:!bg-[#EF93B8]"
@@ -296,7 +296,7 @@ export default function Home() {
               Pick a Category
             </Button>
             
-            <Button
+            <Button 
               variant="outline"
               onClick={() => document.getElementById("timeTravel")?.scrollIntoView({ behavior: "smooth" })}
               className="rounded-lg text-lg px-3 py-1.5 transition-colors bg-transparent hover:!bg-[#EF93B8]"
@@ -309,7 +309,7 @@ export default function Home() {
               Time Travel Mode
             </Button>
             
-            <Button
+            <Button 
               variant="outline"
               onClick={() => document.getElementById("add")?.scrollIntoView({ behavior: "smooth" })}
               className="rounded-lg text-lg px-3 py-1.5 transition-colors bg-transparent hover:!bg-[#EF93B8]"
@@ -321,8 +321,6 @@ export default function Home() {
             >
               Add Your Site
             </Button>
-            
-            
           </div>
         </div>
       </nav>
@@ -342,11 +340,11 @@ export default function Home() {
             <p className="text-base md:text-lg" style={{ color: '#D04D77', fontFamily: 'var(--font-poppins), sans-serif' }}>
               A curated collection of delightful, odd, nostalgic, and playful corners of the internet.
             </p>
-          </div>
+        </div>
         </div>
 
         <div className="flex flex-col items-center gap-4">
-          <Button 
+          <Button
             onClick={handleTakeMeSomewhere}
             size="xl"
             className="text-xl md:text-2xl font-bold rounded-[100px] border-10 border-solid border-black text-black relative overflow-hidden transition-all duration-300 hover:-translate-y-2"
@@ -407,7 +405,7 @@ export default function Home() {
               <div className="space-y-4 -space-x-10">
                 <h2 className="text-4xl font-bold" style={{ color: '#000000' }}>Choose a Mood.</h2>
                 <p className="text-2xl italic" style={{ color: '#000000', marginLeft: '0px' }}>What are we feeling today?</p>
-              </div>
+      </div>
 
             <div className="flex flex-col gap-4 relative">
               {/* First Row - Two buttons side by side */}
@@ -419,35 +417,35 @@ export default function Home() {
                 >
                   {CATEGORIES[0].name}
                 </Button>
-                <Button
+          <Button
                   onClick={() => handleCategorySelect(CATEGORIES[1].name)}
                   className="h-14 px-6 text-lg rounded-xl border-2 border-black text-black hover:opacity-90 transition-all text-left justify-start w-[250px] relative z-10"
                   style={{ backgroundColor: '#D1E2FF' }}
                 >
                   {CATEGORIES[1].name}
-                </Button>
-              </div>
+          </Button>
+            </div>
 
               {/* Second Row - Interactive & Games button */}
               <div className="relative">
-                <Button
+            <Button
                   onClick={() => handleCategorySelect(CATEGORIES[2].name)}
                   className="h-14 px-6 text-lg rounded-xl border-2 border-black text-black hover:opacity-90 transition-all text-left justify-start w-[250px] relative z-10"
                   style={{ backgroundColor: '#D1E2FF' }}
                 >
                   {CATEGORIES[2].name}
-                </Button>
-              </div>
+            </Button>
+      </div>
 
               {/* Third Row - Completely Useless button with cloud */}
               <div className="relative">
-                <Button
+          <Button
                   onClick={() => handleCategorySelect(CATEGORIES[3].name)}
                   className="h-14 px-6 text-lg rounded-xl border-2 border-black text-black hover:opacity-90 transition-all text-left justify-start w-[250px] relative z-10"
                   style={{ backgroundColor: '#D1E2FF' }}
                 >
                   {CATEGORIES[3].name}
-                </Button>
+          </Button>
                 
                 {/* Cloud Background Below Last Button */}
                 <div className="absolute left-0 top-full -mt-20 -ml-32 z-0">
@@ -457,7 +455,7 @@ export default function Home() {
                     className="w-[500px] h-[350px] opacity-70"
                     style={{ mixBlendMode: 'multiply' }}
                   />
-                </div>
+        </div>
               </div>
             </div>
           </div>
@@ -513,7 +511,7 @@ export default function Home() {
             className="w-full h-full object-cover"
           />
         </div>
-        
+
         {/* Content Overlay */}
         <div className="relative z-10 max-w-4xl mx-auto px-8 py-16">
           <div className="space-y-6">
@@ -526,39 +524,39 @@ export default function Home() {
 
             {/* Year Selector */}
             <div className="flex items-center gap-3 mt-8">
-              <Button
+          <Button
                 onClick={() => setYearSlider(Math.max(1999, yearSlider - 1))}
                 className="w-12 h-12 rounded border-2 border-black bg-white text-black hover:bg-gray-100 text-xl font-bold"
                 style={{ borderColor: '#000000' }}
               >
                 -
-              </Button>
+          </Button>
               
               <div className="bg-white border-2 border-black rounded px-6 py-3 min-w-[120px] text-center">
                 <span className="text-3xl font-bold" style={{ color: '#000000' }}>
                   {yearSlider}
                 </span>
               </div>
-              
-              <Button
+          
+          <Button
                 onClick={() => setYearSlider(Math.min(2024, yearSlider + 1))}
                 className="w-12 h-12 rounded border-2 border-black bg-white text-black hover:bg-gray-100 text-xl font-bold"
                 style={{ borderColor: '#000000' }}
               >
                 +
-              </Button>
+          </Button>
             </div>
-
+          
             {/* Go Button */}
             <div className="mt-6 ml-[70px]">
-              <Button
+          <Button
                 onClick={handleTimeTravelStart}
                 className="px-8 py-3 rounded border-2 border-black bg-white text-black hover:bg-gray-100 text-lg font-bold"
                 style={{ borderColor: '#000000' }}
                 disabled={loading}
-              >
+          >
                 {loading ? "Loading..." : "Go"}
-              </Button>
+          </Button>
             </div>
           </div>
         </div>
@@ -641,14 +639,14 @@ export default function Home() {
                 )}
 
                 <div className="flex justify-center pt-4">
-                  <Button 
+          <Button
                     type="submit" 
                     disabled={loading} 
                     className="px-16 py-4 text-xl font-bold border-2 border-black rounded-full text-black hover:opacity-90"
                     style={{ backgroundColor: '#EF93B8', borderColor: '#000000' }}
                   >
                     {loading ? "Submitting..." : "Submit"}
-                  </Button>
+          </Button>
                 </div>
               </form>
             </div>
@@ -656,80 +654,80 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Info Modal */}
-      {showInfo && currentSite && (
-        <div className="fixed inset-0 bg-black/50 flex items-center justify-center z-50 p-4">
-          <Card className="max-w-md w-full">
-            <CardHeader>
-              <div className="flex items-center justify-between">
+        {/* Info Modal */}
+        {showInfo && currentSite && (
+          <div className="fixed inset-0 bg-black/50 flex items-center justify-center z-50 p-4">
+            <Card className="max-w-md w-full">
+              <CardHeader>
+                <div className="flex items-center justify-between">
                 <CardTitle style={{ color: '#000000' }}>{currentSite.title}</CardTitle>
-                <Button
-                  variant="ghost"
-                  size="sm"
-                  onClick={() => setShowInfo(false)}
-                >
-                  ×
-                </Button>
-              </div>
-              <CardDescription style={{ color: '#000000' }}>
-                {currentSite.category} • {currentSite.year}
-              </CardDescription>
-            </CardHeader>
-            <CardContent className="space-y-4">
-              <p style={{ color: '#000000' }}>{currentSite.description}</p>
-              {currentSite.genres.length > 0 && (
-                <div className="flex flex-wrap gap-2">
-                  {currentSite.genres.map((genre, index) => (
-                    <span
-                      key={index}
-                      className="inline-flex items-center rounded-full bg-slate-100 px-3 py-1 text-xs font-medium text-slate-700"
-                    >
-                      {genre}
-                    </span>
-                  ))}
+                  <Button
+                    variant="ghost"
+                    size="sm"
+                    onClick={() => setShowInfo(false)}
+                  >
+                    ×
+                  </Button>
                 </div>
-              )}
-              <Button
-                variant="outline"
-                className="w-full"
-                onClick={() => window.open(currentSite.url, "_blank")}
-              >
-                Open in New Tab
-              </Button>
-            </CardContent>
-          </Card>
-        </div>
-      )}
-
-      {/* Share Modal */}
-      {showShare && currentSite && (
-        <div className="fixed inset-0 bg-black/50 flex items-center justify-center z-50 p-4">
-          <Card className="max-w-md w-full">
-            <CardHeader>
-              <div className="flex items-center justify-between">
-                <CardTitle style={{ color: '#000000' }}>Share Website</CardTitle>
+              <CardDescription style={{ color: '#000000' }}>
+                  {currentSite.category} • {currentSite.year}
+                </CardDescription>
+              </CardHeader>
+              <CardContent className="space-y-4">
+              <p style={{ color: '#000000' }}>{currentSite.description}</p>
+                {currentSite.genres.length > 0 && (
+                  <div className="flex flex-wrap gap-2">
+                    {currentSite.genres.map((genre, index) => (
+                      <span
+                        key={index}
+                        className="inline-flex items-center rounded-full bg-slate-100 px-3 py-1 text-xs font-medium text-slate-700"
+                      >
+                        {genre}
+                      </span>
+                    ))}
+                  </div>
+                )}
                 <Button
-                  variant="ghost"
-                  size="sm"
-                  onClick={() => setShowShare(false)}
+                  variant="outline"
+                  className="w-full"
+                  onClick={() => window.open(currentSite.url, "_blank")}
                 >
-                  ×
+                  Open in New Tab
                 </Button>
-              </div>
-            </CardHeader>
-            <CardContent className="space-y-4">
-              <div className="space-y-2">
-                <Label>URL</Label>
-                <Input value={currentSite.url} readOnly />
-              </div>
-              <Button onClick={handleShare} className="w-full">
-                <Share2 className="h-4 w-4 mr-2" />
-                Share
-              </Button>
-            </CardContent>
-          </Card>
-        </div>
-      )}
+              </CardContent>
+            </Card>
+          </div>
+        )}
+
+        {/* Share Modal */}
+        {showShare && currentSite && (
+          <div className="fixed inset-0 bg-black/50 flex items-center justify-center z-50 p-4">
+            <Card className="max-w-md w-full">
+              <CardHeader>
+                <div className="flex items-center justify-between">
+                <CardTitle style={{ color: '#000000' }}>Share Website</CardTitle>
+                  <Button
+                    variant="ghost"
+                    size="sm"
+                    onClick={() => setShowShare(false)}
+                  >
+                    ×
+                  </Button>
+                </div>
+              </CardHeader>
+              <CardContent className="space-y-4">
+                <div className="space-y-2">
+                  <Label>URL</Label>
+                  <Input value={currentSite.url} readOnly />
+                </div>
+                <Button onClick={handleShare} className="w-full">
+                  <Share2 className="h-4 w-4 mr-2" />
+                  Share
+                </Button>
+              </CardContent>
+            </Card>
+          </div>
+        )}
 
       {/* Decorative Bottom Border */}
       <div 
@@ -741,6 +739,6 @@ export default function Home() {
           backgroundRepeat: 'repeat-x'
         }}
       />
-    </div>
-  );
+      </div>
+    );
 }
