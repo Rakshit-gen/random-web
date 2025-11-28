@@ -328,11 +328,47 @@ export default function Home() {
       {/* Landing Section */}
       <section id="landing" className="mx-auto mt-10 max-w-4xl mx-auto px-4 py-16 space-y-12">
         <div className="flex items-start gap-6">
-          <img 
-            src="/digi camera.png" 
-            alt="Digital Camera" 
-            className="h-30 w-auto object-contain flex-shrink-0 -mt-20 -ml-36"
-          />
+          <div className="relative flex-shrink-0 -mt-20 -ml-36 overflow-hidden">
+            <img 
+              src="/digi camera.png" 
+              alt="Digital Camera" 
+              className="h-30 w-auto object-contain"
+            />
+            {/* Logo centered on camera */}
+            <div className="absolute inset-0 flex items-center justify-center">
+              <div 
+                className="p-2 bg-gray-400 mr-5 mt-6 rounded object-contain"
+                style={{
+                  transform: 'rotate(-38deg)',
+                  transformOrigin: 'center'
+                }}
+              >
+                <img 
+                  src="/logo.jpg" 
+                  alt="Cat Logo" 
+                  className="h-[35px] w-14 z-40 object-contain"
+                  style={{ 
+                    backgroundColor: 'transparent',
+                    mixBlendMode: 'multiply',
+                    filter: 'contrast(1.1)'
+                  }}
+                  onError={(e) => {
+                    // Fallback: create a simple cat icon if image doesn't exist
+                    const target = e.currentTarget;
+                    target.style.display = 'none';
+                    const parent = target.parentElement;
+                    if (parent && !parent.querySelector('.fallback-cat')) {
+                      const fallback = document.createElement('div');
+                      fallback.className = 'fallback-cat';
+                      fallback.innerHTML = '🐱';
+                      fallback.style.fontSize = '2rem';
+                      parent.appendChild(fallback);
+                    }
+                  }}
+                />
+              </div>
+            </div>
+          </div>
           <div className="flex-1 text-center -space-x-10 space-y-6 -mt-2">
             <h1 className="text-3xl md:text-3xl font-bold" style={{ color: '#D04D77', fontFamily: 'var(--font-press-start), monospace', letterSpacing: '0.1em', wordSpacing: '0.2em', lineHeight: '1.5' }}>
               A Tiny Corner of the Internet That Goes &quot;Hmm.&quot;
