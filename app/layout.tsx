@@ -11,6 +11,9 @@ const poppins = Poppins({
 export const metadata: Metadata = {
   title: "The Random Web",
   description: "Discover random fun and creative websites",
+  icons: {
+    icon: "/logo.jpg",
+  },
 };
 
 export default function RootLayout({
